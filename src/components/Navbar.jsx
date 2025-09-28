@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "Купить онлайн", link: "#" },
   ];
   return (
-    <div className="relative max-w-[1260px] mx-auto px-[16px] xl:px-0 font-inter shadow-md sm:shadow-none bg-white z-999">
+    <div className="relative max-w-[1260px] mx-auto px-[16px] xl:px-0 font-inter bg-white z-999">
       <div className="hidden sm:flex items-center justify-end text-[#B0B0B0] text-[14px] pt-[6px] gap-[12px]">
         <p>Схема проезда</p>
         <a href="tel: +79227288288" className="flex items-center gap-[5px]">
@@ -38,10 +38,10 @@ const Navbar = () => {
             return <a key={idx} href={itm.link}>{itm.name}</a>;
           })}
         </nav>
-        <div onClick={handleClickc} className="block lg:hidden text-[30px]">
+        <div onClick={handleClickc} className="block lg:hidden text-[25px] bg-blue-500 shadow-lg shadow-blue-500 rounded-[50px] p-[10px] text-white">
             {nav ? <IoClose /> : <IoMenu />}
         </div>
-        <nav className={`absolute top-[80px] sm:top-[95px] flex flex-col gap-[20px] bg-white w-full p-[20px] text-[18px] transition-all duration-300 ${nav ? 'left-0' : 'left-[-100%]'}`}>
+        <nav className={`absolute top-[80px] sm:top-[95px] flex flex-col gap-[20px] bg-white w-full p-[20px] text-[18px] transition-all duration-500 ${nav ? 'left-0' : 'left-[-100%]'}`}>
           {navItems.map((itm, idx) => {
             return <a key={idx} href={itm.link}>{itm.name}</a>;
           })}
