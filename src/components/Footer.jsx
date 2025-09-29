@@ -1,10 +1,25 @@
 import React from "react";
 import Logo from "../assets/logo.png";
 import { FaPhone } from "react-icons/fa6";
+import { FaVk } from "react-icons/fa";
+import { TfiYoutube } from "react-icons/tfi";
+import { SiYandexcloud } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="bg-[#D9D9D9] text-[#2D2D2D] mt-[40px]">
+    <>
+    <div className="max-w-[170px] mx-auto flex justify-between items-center gap-[10px] mt-[40px]">
+      <a href="#" className="flex justify-center items-center w-[50px] h-[50px] rounded-full bg-primary-blue text-white text-[26px] cursor-pointer border-2 border-primary-blue hover:bg-transparent hover:text-primary-blue duration-300">
+        <FaVk />
+      </a>
+      <a href="#" className="flex justify-center items-center w-[50px] h-[50px] rounded-full bg-primary-blue text-white text-[26px] cursor-pointer border-2 border-primary-blue hover:bg-transparent hover:text-primary-blue duration-300">
+        <TfiYoutube />
+      </a>
+      <a href="#" className="flex justify-center items-center w-[50px] h-[50px] rounded-full bg-primary-blue text-white text-[26px] cursor-pointer border-2 border-primary-blue hover:bg-transparent hover:text-primary-blue duration-300">
+        <SiYandexcloud />
+      </a>
+    </div>
+    <div className="bg-[#D9D9D9] text-[#2D2D2D] mt-[20px]">
       <div className="max-w-[1260px] mx-auto px-[16px] xl:px-0 font-inter py-[20px]">
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <img src={Logo} alt="logo" className="w-[160px] sm:w-[220px]" />
@@ -66,6 +81,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

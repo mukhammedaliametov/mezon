@@ -1,24 +1,21 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Home from "./pages/Home";
+import Tubing from "./pages/Tubing";
 import Footer from "./components/Footer";
-import Reaction from './components/Reaction';
-import Action from "./components/Action";
-import Poster from "./components/Poster";
-import News from './components/News';
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <div className="pt-[120px]"></div>
-      <Hero />
-      <Reaction />
-      <Action />
-      <Poster />
-      <News />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index element={<Home />} />
+          <Route path="/tubing" element={<Tubing />} />
+        </Route>
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 };
 
