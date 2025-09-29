@@ -10,9 +10,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Тюбинг", link: "/tubing" },
-    { name: "Проживание", link: "/" },
+    { name: "Отели", link: "/hotel" },
+    { name: "BBQ площадки", link: "/bbq" },
     { name: "Услуги и тарифы", link: "/" },
-    { name: "Афиша", link: "/" },
     { name: "Для бизнеса", link: "/" },
     { name: "Купить онлайн", link: "/" },
   ];
