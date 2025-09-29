@@ -39,14 +39,28 @@ const Navbar = () => {
             return <a key={idx} href={itm.link}>{itm.name}</a>;
           })}
         </nav>
-        <div onClick={handleClickc} className="block lg:hidden text-[25px] bg-primary-blue shadow-lg shadow-primary-blue rounded-[50px] p-[10px] text-white">
+        <div onClick={handleClickc} className={`block lg:hidden text-[25px] shadow-lg  rounded-[50px] p-[10px] z-20 transition-all duration-500 ${nav ? 'bg-white text-primary-blue shadow-none' : 'bg-primary-blue shadow-primary-blue text-white'}`}>
             {nav ? <IoClose /> : <IoMenu />}
         </div>
-        <nav className={`absolute top-[80px] sm:top-[95px] flex flex-col gap-[20px] bg-white w-full p-[20px] text-[18px] transition-all duration-500 -z-10 ${nav ? 'left-0' : 'left-[-100%]'}`}>
-          {navItems.map((itm, idx) => {
+        <div className={`absolute top-0 bg-primary-blue text-white w-full h-screen p-[20px] text-[18px] transition-all duration-500 ${nav ? 'left-0' : 'left-[-100%]'}`}>
+         <img src={Logo} alt="logo" className="w-[160px]" />
+          <nav className="flex flex-col gap-[20px] pb-[20px] pt-[30px]">
+            {navItems.map((itm, idx) => {
             return <a key={idx} href={itm.link}>{itm.name}</a>;
           })}
-        </nav>
+          </nav>
+          <div className="flex sm:hidden flex-col items-start justify-end text-[14px] pt-[6px] gap-[12px]">
+        <p>Схема проезда</p>
+        <a href="tel: +79227288288" className="flex items-center gap-[5px]">
+          <FaPhone />
+          +79227288288
+        </a>
+        <a href="tel: +73513790979" className="flex items-center gap-[5px]">
+          <FaPhone />
+          +73513790979
+        </a>
+      </div>
+        </div>
       </div>
     </div>
     </div>
