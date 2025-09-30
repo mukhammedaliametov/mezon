@@ -2,6 +2,7 @@ import React from 'react';
 import TubingHero from '../components/TubingHero';
 import TubingTrack from '../components/TubingTrack';
 import TubingGuests from '../components/TubingGuests';
+import TubingSwiper from '../components/TubingSwiper';
 
 const Tubing = () => {
     return (
@@ -9,6 +10,7 @@ const Tubing = () => {
             <TubingHero />
             <TubingTrack />
             <TubingGuests />
+            <TubingSwiper />
         </div>
     );
 };

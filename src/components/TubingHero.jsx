@@ -16,7 +16,8 @@ const TubingHero = () => {
   ];
   return (
     <div
-      style={{ backgroundImage: `url(${TubingHeroImg})` }}
+    style={{ backgroundImage: `url(${TubingHeroImg})` }}
+    data-aos="fade-up"
       className="relative lg:overflow-hidden max-w-[1260px] min-h-[206px] lg:min-h-[450px] bg-cover bg-right bg-no-repeat mx-[16px] xl:mx-auto p-[16px] lg:p-[30px] font-inter rounded-[20px] lg:rounded-[30px] flex items-top justify-between"
     >
       <div className="bg-[#00000042] w-full h-full absolute top-0 left-0 z-10 font-inter rounded-[20px] lg:rounded-[30px]"></div>

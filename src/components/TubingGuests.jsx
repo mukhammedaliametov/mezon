@@ -2,7 +2,7 @@ import React from "react";
 
 const TubingGuests = () => {
   return (
-    <div className="max-w-[1260px] mx-auto px-[16px] xl:px-0 font-inter">
+    <div data-aos="fade-up" className="max-w-[1260px] mx-auto px-[16px] xl:px-0 font-inter">
       <div className="text-left md:text-center w-full md:w-[90%] mx-auto  mt-[50px]">
         <p className="text-primary-blue text-[18px]/[25px] font-[600]">
           Администрация ЦАО "Евразия" не несет ответственности за возможные

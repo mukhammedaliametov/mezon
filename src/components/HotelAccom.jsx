@@ -26,7 +26,7 @@ const HotelAccom = () => {
     },
   ];
   return (
-    <div className="max-w-[1260px] mx-auto px-[16px] xl:px-0 pt-[50px]">
+    <div data-aos="fade-up" className="max-w-[1260px] mx-auto px-[16px] xl:px-0 pt-[50px]">
       <h2 className="section-title md:mb-[30px]">Проживание в ЦАО "Евразия"</h2>
       <div className="font-inter">
         {hotelItems.map((itm, idx) => {

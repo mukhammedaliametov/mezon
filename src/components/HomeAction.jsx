@@ -7,14 +7,14 @@ import Button from "./Button";
 const Action = () => {
   return (
     <div className="max-w-[1260px] mx-auto px-[16px] xl:px-0 pt-[50px]">
-      <div className="flex justify-between items-center md:mb-[30px]">
+      <div data-aos="fade-up" className="flex justify-between items-center md:mb-[30px]">
         <h2 className="section-title">Акции и спец предложения</h2>
         <div className="hidden sm:block">
         <Button name="Посмотреть все" link="/" />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px] font-inter">
-        <div className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
+        <div data-aos="fade-up" data-aos-delay="0" className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
           <img
             src={Image1}
             alt="image1"
@@ -32,7 +32,7 @@ const Action = () => {
             </p>
           </div>
         </div>
-        <div className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
+        <div data-aos="fade-up" data-aos-delay="200" className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
           <img
             src={Image1}
             alt="image1"
@@ -50,7 +50,7 @@ const Action = () => {
             </p>
           </div>
         </div>
-        <div className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
+        <div data-aos="fade-up" data-aos-delay="400" className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
           <img
             src={Image3}
             alt=""
@@ -58,7 +58,7 @@ const Action = () => {
           />
           <div className="absolute top-0 left-0 w-full h-full bg-[#00000028] z-10 transition duration-500 group-hover:opacity-0"></div>
         </div>
-        <div className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
+        <div data-aos="fade-up" data-aos-delay="600" className="relative lg:h-[406px] overflow-hidden rounded-[20px] lg:rounded-[30px] group">
           <img
             src={Image4}
             alt=""

@@ -3,7 +3,7 @@ import { FaRegClock } from "react-icons/fa6";
 
 const BBQCost = () => {
   return (
-    <div className="max-w-[1260px] mx-auto px-[16px] md:px-0 mt-[30px] font-inter">
+    <div data-aos="fade-up" className="max-w-[1260px] mx-auto px-[16px] md:px-0 mt-[30px] font-inter">
       <h2 className="text-center text-[#101828] text-[25px] font-[600] capitalize">
         Стоимость АРЕНДЫ МАНГАЛЬНОЙ ЗОНЫ
       </h2>

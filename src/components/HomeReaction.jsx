@@ -3,7 +3,7 @@ import Image from '../assets/reaction_img.jpg';
 
 const Reaction = () => {
   return (
-    <div className="max-w-[1260px] mx-[16px] xl:mx-auto mt-[60px] font-inter">
+    <div data-aos="fade-up" className="max-w-[1260px] mx-[16px] xl:mx-auto mt-[60px] font-inter">
       <h2 className="section-title md:mb-[20px]">Центр активного отдыха "Евразия"</h2>
       <div className="flex flex-col sm:flex-row items-center justify-between overflow-hidden h-[366px] rounded-[30px] relative">
         <div className="w-[700px] h-[800px] bg-primary-blue absolute -left-[10%] sm:-left-[40%] md:-left-[35%] lg:-left-[10%] top-[120px] sm:top-auto -z-10 rotate-[80deg] md:rotate-[155deg]"></div>
